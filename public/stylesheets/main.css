@@ -1,0 +1,15 @@
+.container{
+	background-color: #E4E6DA ;
+	display: flex;
+	flex-direction: column;
+	margin-inline: 10rem;
+	margin-block: 10rem;
+	padding: 2.5rem;
+	border-radius: 10px;
+}
+
+.btn-custom {
+	background-color: #FDFDFD;
+	color: #0000;
+}
+

@@ -1,0 +1,26 @@
+#{extends 'main.html' /} #{set title:'Formulário' /}
+
+<h1>Cadastro de Pessoa</h1>
+
+<form class="login-form" action ="/pessoas/salvar">
+	<div class="mb-3 ">
+		<label for="exampleInputText1" class="form-label">Nome de
+			usuário:</label> <input type="text" class="form-control"
+			id="exampleInputText1" name="pessoa.nome">
+	</div>
+
+	<div class="mb-3">
+		<label for="exampleInputEmail1" class="form-label">Email:</label> <input
+			type="text" class="form-control" id="exampleInputPassword1"
+			name="pessoa.email">
+	</div>
+
+	<!--	 
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  
+   -->
+	<button type="submit" class="btn btn-outline-success">Submit</button>
+</form>
