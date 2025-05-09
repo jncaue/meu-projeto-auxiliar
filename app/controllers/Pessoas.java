@@ -1,5 +1,7 @@
 package controllers;
 
+import java.util.List;
+
 import models.Pessoa;
 import play.mvc.Controller;
 
@@ -20,8 +22,19 @@ public class Pessoas extends Controller {
 		if (pessoa.email != null) {
 			pessoa.email = pessoa.email.toLowerCase();
 		}
+		
 		pessoa.save();
 		detalhar(pessoa);
+	}
+	
+	public static void listar (Pessoa pessoa) {
+		List<Pessoa> pessoas = Pessoa.findAll();
+		render(pessoas);
+	}
+	
+	public static void remover (Pessoa pessoa) {
+		List<Pessoa> pessoas = Pessoa.findAll();
+		render(pessoa);
 	}
 	
 }

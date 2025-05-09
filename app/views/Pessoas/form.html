@@ -1,8 +1,10 @@
 #{extends 'main.html' /} #{set title:'Formulário' /}
 
+
+<div class ="container-form"></div>
 <h1>Cadastro de Pessoa</h1>
 
-<form class="login-form" action ="/pessoas/salvar">
+<form action="/pessoas/salvar">
 	<div class="mb-3 ">
 		<label for="exampleInputText1" class="form-label">Nome de
 			usuário:</label> <input type="text" class="form-control"
@@ -15,12 +17,5 @@
 			name="pessoa.email">
 	</div>
 
-	<!--	 
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  
-   -->
 	<button type="submit" class="btn btn-outline-success">Submit</button>
 </form>

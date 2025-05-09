@@ -1,0 +1,14 @@
+#{extends 'main.html' /} #{set title:'Listagem' /}
+
+<h1>Listagem de Pessoas</h1>
+
+
+<ul>
+	#{list items: pessoas, as: 'p'}
+	<li>${p.nome} (${p.email})</li>
+	#{/list}
+	#{else}
+	<li>Nenhuma pessoa cadastrada</li>
+	#{/else}	
+</ul>
+
